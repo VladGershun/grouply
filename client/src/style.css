@@ -1,0 +1,13 @@
+.login-form {
+    width: 412px;
+    height: 505px;
+    background: linear-gradient(132.83deg, rgba(252, 255, 254, 0.55) 0%, rgba(255, 255, 255, 0.4) 0.01%, rgba(255, 255, 255, 0.1) 99.07%);
+    backdrop-filter: blur(40px);
+    border-radius: 20px;
+
+    /* shape-outside: inset(20px 50px 10px 0 round 50px); */
+
+    border: 2px solid black;
+    margin: 20px;
+    padding: 20px;
+}

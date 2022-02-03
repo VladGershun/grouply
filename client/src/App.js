@@ -1,7 +1,12 @@
-export default function App() {
+import { Route, Routes } from 'react-router-dom';
+import LoginForm from './components/LoginForm';
+
+const App = () => {
   return(
-    <>
-      <h1>Grouply</h1>
-    </>
+    <div>
+      <LoginForm />
+    </div>
   );
 }
+
+export default App;
