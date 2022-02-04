@@ -1,10 +1,10 @@
 import { Route, Routes } from 'react-router-dom';
-import LoginForm from './components/LoginForm';
+import SignUpForm from './pages/SignUpForm';
 
 const App = () => {
   return(
     <div>
-      <LoginForm />
+      <SignUpForm />
     </div>
   );
 }
