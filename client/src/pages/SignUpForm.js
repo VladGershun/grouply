@@ -1,4 +1,4 @@
-import '../sign-up-form.css'
+import '../styles/sign-up-form.css'
 
 const SignUpForm = () => {
     return(
@@ -10,12 +10,12 @@ const SignUpForm = () => {
         </div>
         <div className='sign-up-form'>
             <h1 className='sign-up-logo'>Sign Up</h1>
-            {/* <input className='sign-up-username-input' placeholder='Username'></input> */}
-            {/* <input className='sign-up-email-input' placeholder='Email'></input> */}
-            {/* <input className='sign-up-password-input' placeholder='Password'></input> */}
-            {/* <input className='sign-up-password-confirm-input' placeholder='Confirm Password'></input> */}
-            {/* <button className='sign-up-login-button'>Log In</button> */}
-            {/* <button className='sign-up-sign-up-button'>Sign Up</button> */}
+            <input className='sign-up-username-input' placeholder='Username'></input>
+            <input className='sign-up-email-input' placeholder='Email'></input>
+            <input className='sign-up-password-input' placeholder='Password'></input>
+            <input className='sign-up-password-confirm-input' placeholder='Confirm Password'></input>
+            <button className='sign-up-login-button'>Log In</button>
+            <button className='sign-up-sign-up-button'>Sign Up</button>
         </div>
 
         </>

@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #2F455C;
+}
+
+.sign-up-background {
+    width: 430px;
+    height: 520px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+}
+
+.circle-1 {
+    width: 270px;
+    height: 270px;
+    position: absolute;
+    border-radius: 50%;
+    background: #21D0B2;
+    left: -170px;
+    top: -95px;
+}
+
+.circle-2 {
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    border-radius: 50%;
+    background: #34F5C5;
+    left: 320px;
+    top: -160px;
+}
+
+.circle-3 {
+    width: 270px;
+    height: 270px;
+    position: absolute;
+    border-radius: 50%;
+    background: #1DCDFE;
+    left: -190px;
+    bottom: -190px;
+}
+
+.sign-up-form {
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 600px;
+    background: linear-gradient(132.83deg, 
+                rgba(255, 255, 255, 0.4) 0.01%, 
+                rgba(255, 255, 255, 0.1) 99.07%);
+    backdrop-filter: blur(35px);
+    border-radius: 20px;
+}
+
+.sign-up-logo {
+    font-size: 40px;
+    font-family: 'Poppins',sans-serif;
+    text-align: center;
+    margin: 45px;
+    color: white;
+}
+
+.sign-up-username-input {
+    position: absolute;
+    left: 90px;
+    height: 50px;
+    width: 60%;
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid white;
+    padding: 0px 10px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.sign-up-email-input {
+    position: absolute;
+    top: 210px;
+    left: 90px;
+    height: 50px;
+    width: 60%;
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid white;
+    padding: 0px 10px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.sign-up-password-input {
+    position: absolute;
+    top: 285px;
+    left: 90px;
+    height: 50px;
+    width: 60%;
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid white;
+    padding: 0px 10px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.sign-up-password-confirm-input {
+    position: absolute;
+    top: 360px;
+    left: 90px;
+    height: 50px;
+    width: 60%;
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid white;
+    padding: 0px 10px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.sign-up-login-button {
+    position: absolute;
+    left: 90px;
+    top: 440px;
+    width: 25%;
+    background-color: #29aa8a;
+    color: white;
+    padding: 5px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 15px;
+    border: 2px solid #29aa8a;
+    cursor: pointer;
+}
+
+.sign-up-sign-up-button {
+    position: absolute;
+    left: 285px;
+    top: 440px;
+    width: 25%;
+    background-color: #29aa8a;
+    color: white;
+    padding: 5px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 15px;
+    border: 2px solid #29aa8a;
+    cursor: pointer;
+}
