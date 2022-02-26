@@ -6,3 +6,59 @@
 body {
     background-color: #2F455C;
 }
+
+.home-background {
+    width: 1250px;
+    height: 920px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+}
+
+.user-info {
+    width: 380px;
+    height: 310px;
+    border-radius: 20px;
+    background: #21D0B2;
+    position: absolute;
+}
+
+.social-info {
+    width: 380px;
+    height: 560px;
+    border-radius: 20px;
+    background: #21D0B2;
+    position: absolute;
+    top: 360px;
+}
+
+.menu-bar {
+    position: absolute;
+    width: 750px;
+    height: 80px;
+    border-radius: 20px;
+    background: #21D0B2;
+    left: 500px;
+}
+
+.calander-view {
+    position: absolute;
+    width: 750px;
+    height: 450px;
+    border-radius: 20px;
+    background: #21D0B2;
+    left: 500px;
+    top: 140px;
+}
+
+.chat-box {
+    position: absolute;
+    width: 750px;
+    height: 270px;
+    position: absolute;
+    border-radius: 20px;
+    background: #21D0B2;
+    left: 500px;
+    top: 650px;
+}
