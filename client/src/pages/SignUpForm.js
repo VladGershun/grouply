@@ -17,17 +17,7 @@ const SignUpForm = () => {
             <button className='sign-up-login-button'>Log In</button>
             <button className='sign-up-sign-up-button'>Sign Up</button>
         </div>
-
         </>
-        
-
-
-            
-                
-            
-
-
-        
     )
 }
 
