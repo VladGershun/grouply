@@ -5,6 +5,7 @@
 
 body {
     background-color: #2F455C;
+    font-family: 'Poppins',sans-serif;
 }
 
 .home-background {
@@ -22,6 +23,93 @@ body {
     border-radius: 20px;
     background: #21D0B2;
     position: absolute;
+}
+
+.profile-image {
+    height: 130px;
+    width: 130px;
+    border-radius: 20px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.profile-full-name {
+    position: absolute;
+    top: 20px;
+    left: 160px;
+    color: white;
+}
+
+.profile-username {
+    position: absolute;
+    top: 55px;
+    left: 160px;
+    color: white;
+}
+
+.profile-about {
+    position: absolute;
+    top: 155px;
+    left: 15px;
+    color: white;
+}
+
+.menu-time {
+    position: absolute;
+    top: 5px;
+    left: 25px;
+    color: white;
+}
+
+.menu-date {
+    position: absolute;
+    top: 40px;
+    left: 25px;
+    color: white;
+}
+
+.nav-bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 10px;
+    right: 30px;
+}
+
+.nav-bar > li {
+    float: left;
+    font-size: 24px;
+}
+
+.nav-bar > li:hover {
+    color: #2F455C;
+    cursor: pointer;
+}
+
+.nav-bar-schedule {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav-bar-profile {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav-bar-settings {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
 .social-info {
@@ -61,4 +149,50 @@ body {
     background: #21D0B2;
     left: 500px;
     top: 650px;
+}
+
+.chat-box-display {
+    position: absolute;
+    width: 725px;
+    height: 150px;
+    position: absolute;
+    border-radius: 20px;
+    background: white;
+    left: 12.5px;
+    top: 14px;
+    border: 2px solid black;
+}
+
+.chat-box-message {
+    position: absolute;
+    width: 550px;
+    height: 45px;
+    position: absolute;
+    border-radius: 15px;
+    background: white;
+    left: 12.5px;
+    top: 190px;
+    border: 2px solid black;
+}
+
+.chat-box-btn {
+    position: absolute;
+    left: 590px;
+    top: 190px;
+    width: 150px;
+    height: 48px;
+    background-color: #D03ED3;
+    color: white;
+    padding: 5px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 15px;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.chat-box-btn:hover {
+    background-color: black;
+    color: white;
+
 }
