@@ -32,6 +32,7 @@ body {
     position: absolute;
     top: 15px;
     left: 15px;
+    border: 2px solid white;
 }
 
 .profile-full-name {
@@ -173,6 +174,8 @@ body {
     left: 12.5px;
     top: 190px;
     border: 2px solid black;
+    padding: 0px 10px;
+    font-size: 25px;
 }
 
 .chat-box-btn {

@@ -1,6 +1,11 @@
 import '../styles/sign-up-form.css'
 
-const SignUpForm = () => {
+let errorShow = false
+
+const SignUpForm = (props) => {
+    {if(props.errorMsg.length > 0) {
+        errorShow = true
+    }}
     return(
         <>
         <div className='sign-up-background'>
@@ -17,8 +22,19 @@ const SignUpForm = () => {
             <button className='sign-up-login-button'>Log In</button>
             <button className='sign-up-sign-up-button'>Sign Up</button>
         </div>
+        {errorShow &&
+            <div className='sign-up-error'>
+                <p>{props.errorMsg}</p>
+                <button onClick={clear()} className='sign-up-error-btn'>Okay</button>
+            </div>
+        }
         </>
     )
+}
+
+function clear() {
+    errorShow = false
+    console.log(errorShow)
 }
 
 export default SignUpForm;
