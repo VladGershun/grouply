@@ -1,8 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
-import LoginForm from './components/LoginForm';
 import HomePage from './pages/HomePage';
 import SignUpForm from './pages/SignUpForm';
-import LogInForm from './pages/LogInForm';
+import LogInForm from './components/LogInForm';
 
 const App = () => {
   return(
@@ -19,9 +18,7 @@ const App = () => {
       {/* <SignUpForm 
         errorMsg = 'Test error'
       /> */}
-      <LogInForm.js>
-
-      </LogInForm.js>
+      <LogInForm />
     </div>
   );
 }
