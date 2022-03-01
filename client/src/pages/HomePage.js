@@ -9,6 +9,7 @@ const HomePage = (props) => {
         <>
         <div className='home-background'>
             <div className='user-info'>
+            
                 <img className='profile-image' src = {props.profileImage}></img>
                 <h1 className='profile-full-name'>{`${props.firstName} ${props.lastName}`}</h1>
                 <h3 className='profile-username'>{`@${props.username}`}</h3>
@@ -19,7 +20,7 @@ const HomePage = (props) => {
             </div>
             <div className='menu-bar'>
                 <h1 className='menu-time'>{props.currentTime}</h1>
-                <h2 className='menu-date'>{props.date}</h2>
+                <h2 class="menu-date"><span id="menu-date"></span></h2>
                 <nav>
                     <ul className='nav-bar'>
                         <li onClick={showSchedule} className='nav-bar-schedule'>Schedule</li>
@@ -93,6 +94,18 @@ function showProfile(isProfileVisible) {
 }
 function showSettings(isSettingsVisisble) {
     isSettingsVisisble.toggle()
+}
+
+window.onload = setInterval(clock);
+function clock()
+{
+    var d = new Date();
+    var date = d.getDate();
+    var year = d.getFullYear();
+    var month = d.getMonth();
+    var monthArr = ["January", "February","March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    month = monthArr[month];
+    document.getElementByID("menu-date").innerHTML=month+" "+date+", "+year;
 }
 
 
