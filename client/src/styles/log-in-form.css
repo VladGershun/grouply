@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #2F455C;
+    font-family: 'Poppins',sans-serif;
+}
+
+.top-circle{
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    left: 110px;
+    top: 105px;
+    background: #34F5C5;
+}
+
+.mid-circle{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    left: 75px;
+    top: 505px;
+    background: #1DCDFE;
+}
+
+.bottom-circle {
+    position: absolute;
+    width: 270px;
+    height: 270px;
+    left: 315px;
+    top: 670px;
+    background: #21D0B2;
+}
+
+.log-in-field {
+    position: absolute;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    height: 500px;
+    left: 900px;
+    top: 260px;
+    background: linear-gradient(132.83deg,
+        rgba(252, 255, 254, 0.55) 0%,
+        rgba(255, 255, 255, 0.4) 0.01%,
+        rgba(255, 255, 255, 0.1) 99.07%);
+    backdrop-filter: blur(40px);
+    border-radius: 20px;
+}
