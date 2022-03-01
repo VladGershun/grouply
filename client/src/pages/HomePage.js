@@ -1,6 +1,10 @@
 import '../styles/home-page.css'
 
 const HomePage = (props) => {
+    let isScheduleVisible = false
+    let isProfileVisible = false
+    let isSettingsVisisble = false
+
     return(
         <>
         <div className='home-background'>
@@ -18,14 +22,58 @@ const HomePage = (props) => {
                 <h2 className='menu-date'>{props.date}</h2>
                 <nav>
                     <ul className='nav-bar'>
-                        <li className='nav-bar-schedule'>Schedule</li>
-                        <li className='nav-bar-profile'>Profile</li>
-                        <li className='nav-bar-settings'>Settings</li>
+                        <li onClick={showSchedule} className='nav-bar-schedule'>Schedule</li>
+                        <li onClick={showProfile} className='nav-bar-profile'>Profile</li>
+                        <li onClick={showSettings} className='nav-bar-settings'>Settings</li>
                     </ul>
                 </nav>
             </div>
             <div className='calander-view'>
-
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>9</td>
+                            <td>10</td>
+                            <td>11</td>
+                            <td>12</td>
+                            <td>13</td>
+                            <td>14</td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td>16</td>
+                            <td>17</td>
+                            <td>18</td>
+                            <td>19</td>
+                            <td>20</td>
+                            <td>21</td>
+                        </tr>
+                        <tr>
+                            <td>22</td>
+                            <td>23</td>
+                            <td>24</td>
+                            <td>25</td>
+                            <td>26</td>
+                            <td>27</td>
+                            <td>28</td>
+                        </tr>
+                        <tr>
+                            <td>29</td>
+                            <td>30</td>
+                            <td>31</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
             <div className='chat-box'>
                 <div className='chat-box-display'></div>
@@ -36,5 +84,16 @@ const HomePage = (props) => {
         </>
     )
 }
+
+function showSchedule(isScheduleVisible) {
+    isScheduleVisible.toggle()
+}
+function showProfile(isProfileVisible) {
+    isProfileVisible.toggle()
+}
+function showSettings(isSettingsVisisble) {
+    isSettingsVisisble.toggle()
+}
+
 
 export default HomePage;

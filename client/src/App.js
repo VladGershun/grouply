@@ -5,7 +5,7 @@ import SignUpForm from './pages/SignUpForm';
 const App = () => {
   return(
     <div>
-      {/* <HomePage 
+      <HomePage 
         profileImage = 'https://res.cloudinary.com/demo/image/twitter_name/BillClinton.jpg'
         firstName = 'Vlad'
         lastName = 'Gershun'
@@ -13,10 +13,10 @@ const App = () => {
         about = 'Probably eating food...'
         currentTime  = '5:07 PM'
         date = 'Feb 25, 2022'
-      /> */}
-      <SignUpForm 
-        errorMsg = 'Test error'
       />
+      {/* <SignUpForm 
+        errorMsg = 'Test error'
+      /> */}
     </div>
   );
 }
