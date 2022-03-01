@@ -19,8 +19,9 @@ const HomePage = (props) => {
 
             </div>
             <div className='menu-bar'>
-                <h1 className='menu-time'>{props.currentTime}</h1>
-                <h2 class="menu-date"><span id="menu-date"></span></h2>
+                {/* <h1 className='menu-time'>{props.currentTime}</h1> */}
+                <h1 className="menu-time"><span id="menu-time"></span></h1>
+                <h2 className="menu-date"><span id="menu-date"></span></h2>
                 <nav>
                     <ul className='nav-bar'>
                         <li onClick={showSchedule} className='nav-bar-schedule'>Schedule</li>
@@ -96,17 +97,28 @@ function showSettings(isSettingsVisisble) {
     isSettingsVisisble.toggle()
 }
 
-window.onload = setInterval(clock);
-function clock()
-{
+window.onload = setInterval(getDate);
+function getDate() {
     var d = new Date();
     var date = d.getDate();
     var year = d.getFullYear();
     var month = d.getMonth();
-    var monthArr = ["January", "February","March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    var monthArr = ["January", "February","March", "April", "May", "June", "July", "August", "September", "October", "November","December"];
     month = monthArr[month];
-    document.getElementByID("menu-date").innerHTML=month+" "+date+", "+year;
+    document.getElementById("menu-date").innerHTML=month+" "+date+", "+year;
 }
 
+window.onload = setInterval(getTime);
+function getTime() {
+    let date = new Date
+    let hours = date.getHours();
+    let minutes = date.getMinutes();
+    let ampm = hours >= 12 ? 'PM' : 'AM';
+    hours = hours % 12;
+    hours = hours ? hours : 12;
+    minutes = minutes < 10 ? '0'+minutes : minutes;
+    let strTime = hours + ':' + minutes + ' ' + ampm;
+    document.getElementById("menu-time").innerHTML=strTime;
+}
 
 export default HomePage;
