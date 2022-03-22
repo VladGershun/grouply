@@ -9,7 +9,7 @@ const LogInForm = (props) => {
             <div className='log-in-field'>
                 <h1 className='logo'>GROUPLY</h1>
                 <input className='log-in-username-input' placeholder='Username'></input>
-                <input className='log-in-password-input' placeholder='password'></input>
+                <input className='log-in-password-input' placeholder='Password'></input>
                 <button className='log-in-login-button'>Log In</button>
                 <button className='log-in-signup-button'>Sign Up</button>
             </div>
