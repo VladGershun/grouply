@@ -71,7 +71,8 @@ body {
 .log-in-field > input {
     display: flex;
     transform: translate(50px,0px);
-    text-align: center;
+    text-align: left;
+    border: 1px solid white
 }
 
 .log-in-field > button {
@@ -81,6 +82,7 @@ body {
     height: 45px;
     text-align: center;
     outline: none;
+    border: 1px solid #34F5C5;
 }
 
 .log-in-username-input {
@@ -94,10 +96,15 @@ body {
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 400;
-    font-size: 15px;
+    font-size: 22px;
     line-height: 30px;
 
     color: #000000;
+}
+
+.log-in-username-input::placeholder{
+    color: black;
+    padding: 15px;
 }
 
 .log-in-password-input {
@@ -111,18 +118,40 @@ body {
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 400;
-    font-size: 15px;
+    font-size: 22px;
     line-height: 30px;
 
     color: black;
+
+}
+
+.log-in-password-input::placeholder{
+    color: black;
+    padding: 15px;
 }
 
 .log-in-login-button {
     margin-top: 40px;
     transform: translate(46px,0px);
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 30px;
+
+    color: white;
 }
 
 .log-in-signup-button {
-    transform: translate(92px, 0px)
+    transform: translate(92px, 0px);
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 30px;
+
+    color: white; 
 }
 
