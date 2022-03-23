@@ -1,6 +1,11 @@
 import '../styles/log-in-form.css'
 
+let moveToSignUpPage = false
+let isUsernamePopulated = false
+let isPasswordPopulated = false
+
 const LogInForm = (props) => {
+
     return(
         <>
             <div className='top-circle'></div>
@@ -8,12 +13,46 @@ const LogInForm = (props) => {
             <div className='bottom-circle'></div>
             <div className='log-in-field'>
                 <h1 className='logo'>GROUPLY</h1>
-                <input className='log-in-username-input' placeholder='Username'></input>
-                <input className='log-in-password-input' placeholder='Password'></input>
-                <button className='log-in-login-button'>Log In</button>
-                <button className='log-in-signup-button'>Sign Up</button>
+                <input onChange={usernameHandler} className='log-in-username-input' placeholder='Username'></input>
+                <input onChange={passwordHandler} className='log-in-password-input' placeholder='Password'></input>
+                <button onClick={logInButtonHandler} className='log-in-login-button'>Log In</button>
+                <button onClick={signUpButtonHandler} className='log-in-signup-button'>Sign Up</button>
             </div>
         </>
     )
 }
+
+function usernameHandler(event){
+    let inputVal = event.target.value
+    if(inputVal === ''){
+        isUsernamePopulated = false;
+    } else {
+        isUsernamePopulated = true;
+    }
+
+    console.log(inputVal);
+    console.log(isUsernamePopulated);
+}
+
+function passwordHandler(event){
+    let inputVal = event.target.value
+    if(inputVal === ''){
+        isPasswordPopulated = false;
+    } else {
+        isPasswordPopulated = true;
+    }
+
+    console.log(inputVal);
+    console.log(isPasswordPopulated);
+}
+
+function signUpButtonHandler(){
+    moveToSignUpPage = true;
+    alert('Move to sign up page');
+}
+
+function logInButtonHandler(){
+    alert('log in button clicked');
+}
+
 export default LogInForm;

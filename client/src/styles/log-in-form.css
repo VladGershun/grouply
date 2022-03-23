@@ -99,7 +99,7 @@ body {
     font-size: 22px;
     line-height: 30px;
 
-    color: #000000;
+    color: black;
 }
 
 .log-in-username-input::placeholder{
@@ -122,7 +122,6 @@ body {
     line-height: 30px;
 
     color: black;
-
 }
 
 .log-in-password-input::placeholder{

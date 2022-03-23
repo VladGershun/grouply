@@ -6,7 +6,7 @@ import LogInForm from './components/LogInForm';
 const App = () => {
   return(
     <div>
-      {/* <HomePage 
+      {/* { <HomePage 
         profileImage = 'https://res.cloudinary.com/demo/image/twitter_name/BillClinton.jpg'
         firstName = 'Vlad'
         lastName = 'Gershun'
@@ -14,10 +14,10 @@ const App = () => {
         about = 'Probably eating food...'
         currentTime  = '5:07 PM'
         date = 'Feb 25, 2022'
-      /> */}
-      {/* <SignUpForm 
+      /> }
+      { <SignUpForm 
         errorMsg = 'Test error'
-      /> */}
+      /> } */}
       <LogInForm />
     </div>
   );
