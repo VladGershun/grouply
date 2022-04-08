@@ -13,6 +13,7 @@ const App = () => {
         about = 'Probably eating food...'
         currentTime  = '5:07 PM'
         date = 'Feb 25, 2022'
+        calendar = {['1', '2', '3', '4', '5', '6', '7']}
       />
       {/* <SignUpForm 
         errorMsg = 'Test error'

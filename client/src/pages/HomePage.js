@@ -34,13 +34,13 @@ const HomePage = (props) => {
                 <table>
                     <tbody>
                         <tr>
-                            <td>1</td>
-                            <td>2</td>
-                            <td>3</td>
-                            <td>4</td>
-                            <td>5</td>
-                            <td>6</td>
-                            <td>7</td>
+                            <td>{props.calendar[0]}</td>
+                            <td>{props.calendar[1]}</td>
+                            <td>{props.calendar[2]}</td>
+                            <td>{props.calendar[3]}</td>
+                            <td>{props.calendar[4]}</td>
+                            <td>{props.calendar[5]}</td>
+                            <td>{props.calendar[6]}</td>
                         </tr>
                         <tr>
                             <td>8</td>
