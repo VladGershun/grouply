@@ -1,4 +1,5 @@
 import '../styles/sign-up-form.css'
+import React from 'react'
 
 let errorShow = false
 

@@ -1,0 +1,30 @@
+[
+    {
+        "emailAddress": "admin@admin.com",
+        "username": "admin",
+        "password": "admin",
+        "logInAttempts": 0,
+        "sus": false
+    }, 
+    {
+        "emailAddress": "Kyle@FAANG.com",
+        "username": "KyleS",
+        "password": "Password",
+        "logInAttempts": 0,
+        "sus": false
+    }, 
+    {
+        "emailAddress": "Vlad@FAANG.com",
+        "username": "VladG",
+        "password": "Password",
+        "logInAttempts": 0,
+        "sus": false
+    }, 
+    {
+        "emailAddress": "Ramiz@FAANG.com",
+        "username": "RamizT",
+        "password": "Password",
+        "logInAttempts": 5,
+        "sus": true
+    }
+]
