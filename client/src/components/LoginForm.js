@@ -1,6 +1,7 @@
 import '../styles/log-in-form.css'
 import data from '../data/UserInfo.json'
 import React from 'react'
+
 let moveToSignUpPage = false;
 let isUsernamePopulated = false;
 let isPasswordPopulated = false;
