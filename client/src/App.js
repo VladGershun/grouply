@@ -14,9 +14,10 @@ const App = () => {
         currentTime  = '5:07 PM'
         date = 'Feb 25, 2022'
         calendar = {['1', '2', '3', '4', '5', '6', '7']}
+        calendarDetails = {['Work', 'School', '']}
       />
       {/* <SignUpForm 
-        errorMsg = 'Test error'
+        errorMsg = 'Test'
       /> */}
     </div>
   );

@@ -34,45 +34,70 @@ const HomePage = (props) => {
                 <table>
                     <tbody>
                         <tr>
-                            <td>{props.calendar[0]}</td>
-                            <td>{props.calendar[1]}</td>
-                            <td>{props.calendar[2]}</td>
-                            <td>{props.calendar[3]}</td>
-                            <td>{props.calendar[4]}</td>
-                            <td>{props.calendar[5]}</td>
-                            <td>{props.calendar[6]}</td>
+                            <td>
+                                <p className='date'>{props.calendar[0]}</p>
+                                <p className='dateInfo'>{props.calendarDetails[0]}</p>
+                            </td>
+                            <td>
+                                <p className='date'>{props.calendar[1]}</p>
+                                <p className='dateInfo'>{props.calendarDetails[2]}</p>
+                            </td>
+                            <td>
+                                <p className='date'>{props.calendar[2]}</p>
+                                <p className='dateInfo'>{props.calendarDetails[1]}</p>
+                            </td>
+                            <td>
+                                <p className='date'>{props.calendar[3]}</p>
+                                <p className='dateInfo'>{props.calendarDetails[2]}</p>
+                            </td>
+                            <td>
+                                <p className='date'>{props.calendar[4]}</p>
+                                <p className='dateInfo'>{props.calendarDetails[0]}</p>
+                            </td>
+                            <td>
+                                <p className='date'>{props.calendar[5]}</p>
+                                <p className='dateInfo'>{props.calendarDetails[2]}</p>
+                            </td>
+                            <td>
+                                <p className='date'>{props.calendar[6]}</p>
+                                <p className='dateInfo'>{props.calendarDetails[2]}</p>
+                            </td>
                         </tr>
                         <tr>
-                            <td>8</td>
-                            <td>9</td>
-                            <td>10</td>
-                            <td>11</td>
-                            <td>12</td>
-                            <td>13</td>
-                            <td>14</td>
+                            <td><p className='date'>8</p></td>
+                            <td><p className='date'>9</p></td>
+                            <td><p className='date'>10</p></td>
+                            <td><p className='date'>11</p></td>
+                            <td><p className='date'>12</p></td>
+                            <td><p className='date'>13</p></td>
+                            <td><p className='date'>14</p></td>
                         </tr>
                         <tr>
-                            <td>15</td>
-                            <td>16</td>
-                            <td>17</td>
-                            <td>18</td>
-                            <td>19</td>
-                            <td>20</td>
-                            <td>21</td>
+                            <td><p className='date'>15</p></td>
+                            <td><p className='date'>16</p></td>
+                            <td><p className='date'>17</p></td>
+                            <td><p className='date'>18</p></td>
+                            <td><p className='date'>19</p></td>
+                            <td><p className='date'>20</p></td>
+                            <td><p className='date'>21</p></td>
                         </tr>
                         <tr>
-                            <td>22</td>
-                            <td>23</td>
-                            <td>24</td>
-                            <td>25</td>
-                            <td>26</td>
-                            <td>27</td>
-                            <td>28</td>
+                            <td><p className='date'>22</p></td>
+                            <td><p className='date'>23</p></td>
+                            <td><p className='date'>24</p></td>
+                            <td><p className='date'>25</p></td>
+                            <td><p className='date'>26</p></td>
+                            <td><p className='date'>27</p></td>
+                            <td><p className='date'>28</p></td>
                         </tr>
                         <tr>
-                            <td>29</td>
-                            <td>30</td>
-                            <td>31</td>
+                            <td><p className='date'>29</p></td>
+                            <td><p className='date'>30</p></td>
+                            <td><p className='date'>31</p></td>
+                            <td><p className='date'>1</p></td>
+                            <td><p className='date'>2</p></td>
+                            <td><p className='date'>3</p></td>
+                            <td><p className='date'>4</p></td>
                         </tr>
                     </tbody>
                 </table>

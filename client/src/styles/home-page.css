@@ -141,6 +141,31 @@ body {
     top: 140px;
 }
 
+tbody {
+    position: absolute;
+    left: 1px;
+}
+
+td {
+    width: 120px;
+    height: 85px;
+    background-color: white;
+    border-radius: 20px;
+    
+}
+
+.date {
+    position: relative;
+    top: -20px;
+    left: 7px;
+}
+
+.dateInfo {
+    position: relative;
+    top: -15px;
+    left: 10px;
+}
+
 .chat-box {
     position: absolute;
     width: 750px;
@@ -200,8 +225,3 @@ body {
 
 }
 
-tr {
-    width: 30px;
-    height: 30px;
-    background-color: white;
-}

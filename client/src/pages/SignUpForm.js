@@ -3,9 +3,9 @@ import '../styles/sign-up-form.css'
 let errorShow = false
 
 const SignUpForm = (props) => {
-    {if(props.errorMsg.length > 0) {
+    if(props.errorMsg.length > 0) {
         errorShow = true
-    }}
+    }
     return(
         <>
         <div className='sign-up-background'>
