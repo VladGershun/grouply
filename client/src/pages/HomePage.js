@@ -1,4 +1,5 @@
 import '../styles/home-page.css'
+import React from 'react'
 
 const HomePage = (props) => {
     let isScheduleVisible = false
