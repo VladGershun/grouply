@@ -4,9 +4,9 @@ import React from 'react'
 let errorShow = false
 
 const SignUpForm = (props) => {
-    {if(props.errorMsg.length > 0) {
+    if(props.errorMsg.length > 0) {
         errorShow = true
-    }}
+    }
     return(
         <>
         <div className='sign-up-background'>
@@ -26,14 +26,14 @@ const SignUpForm = (props) => {
         {errorShow &&
             <div className='sign-up-error'>
                 <p>{props.errorMsg}</p>
-                <button onClick={clear()} className='sign-up-error-btn'>Okay</button>
+                <button onClick={clearError} className='sign-up-error-btn'>Okay</button>
             </div>
         }
         </>
     )
 }
 
-function clear() {
+function clearError() {
     errorShow = false
     console.log(errorShow)
 }

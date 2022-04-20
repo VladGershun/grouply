@@ -11,25 +11,22 @@ import {
 
 const App = () => {
   return(
-    <Router>
-      <Routes>
-        <Route path="/" element={<LogInForm />} />
-        <Route path="/SignUp" element={ <SignUpForm
-                                        errorMsg = 'Test error'/>
-                                      } 
-        />
-        <Route path="/HomePage" element={<HomePage 
-                                          profileImage = 'https://res.cloudinary.com/demo/image/twitter_name/BillClinton.jpg'
-                                          firstName = 'Vlad'
-                                          lastName = 'Gershun'
-                                          username = 'vladgershun'
-                                          about = 'Probably eating food...'
-                                          currentTime  = '5:07 PM'
-                                          date = 'Feb 25, 2022' />
-                                        }
-        />
-      </Routes>
-    </Router>
+    <div>
+      <HomePage 
+        profileImage = 'https://res.cloudinary.com/demo/image/twitter_name/BillClinton.jpg'
+        firstName = 'Vlad'
+        lastName = 'Gershun'
+        username = 'vladgershun'
+        about = 'Probably eating food...'
+        currentTime  = '5:07 PM'
+        date = 'Feb 25, 2022'
+        calendar = {['1', '2', '3', '4', '5', '6', '7']}
+        calendarDetails = {['Work', 'School', '']}
+      />
+      {/* <SignUpForm 
+        errorMsg = 'Test'
+      /> */}
+    </div>
   );
 }
 
