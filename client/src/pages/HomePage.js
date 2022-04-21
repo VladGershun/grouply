@@ -20,7 +20,7 @@ const HomePage = (props) => {
 
             </div>
             <div className='menu-bar'>
-                {/* <h1 className='menu-time'>{props.currentTime}</h1> */}
+                {/* { <h1 className='menu-time'>{props.currentTime}</h1> } */}
                 <h1 className="menu-time"><span id="menu-time"></span></h1>
                 <h2 className="menu-date"><span id="menu-date"></span></h2>
                 <nav>
@@ -123,28 +123,29 @@ function showSettings(isSettingsVisisble) {
     isSettingsVisisble.toggle()
 }
 
-window.onload = setInterval(getDate);
-function getDate() {
-    var d = new Date();
-    var date = d.getDate();
-    var year = d.getFullYear();
-    var month = d.getMonth();
-    var monthArr = ["January", "February","March", "April", "May", "June", "July", "August", "September", "October", "November","December"];
-    month = monthArr[month];
-    document.getElementById("menu-date").innerHTML=month+" "+date+", "+year;
-}
+// window.onload = setInterval(getDate);
+// function getDate() {
+//     var d = new Date();
+//     var date = d.getDate();
+//     var year = d.getFullYear();
+//     var month = d.getMonth();
+//     var monthArr = ["January", "February","March", "April", "May", "June", "July", "August", "September", "October", "November","December"];
+//     month = monthArr[month];
+//     document.getElementById("menu-date").innerHTML=month+" "+date+", "+year;
+// }
 
-window.onload = setInterval(getTime);
-function getTime() {
-    let date = new Date
-    let hours = date.getHours();
-    let minutes = date.getMinutes();
-    let ampm = hours >= 12 ? 'PM' : 'AM';
-    hours = hours % 12;
-    hours = hours ? hours : 12;
-    minutes = minutes < 10 ? '0'+minutes : minutes;
-    let strTime = hours + ':' + minutes + ' ' + ampm;
-    document.getElementById("menu-time").innerHTML=strTime;
-}
+// window.onload = setInterval(getTime);
+// function getTime() {
+//     let date = new Date
+//     let hours = date.getHours();
+//     let minutes = date.getMinutes();
+//     let ampm = hours >= 12 ? 'PM' : 'AM';
+//     hours = hours % 12;
+//     hours = hours ? hours : 12;
+//     minutes = minutes < 10 ? '0'+minutes : minutes;
+//     let strTime = hours + ':' + minutes + ' ' + ampm;
+//     document.getElementById("menu-time").innerHTML=strTime;
+//     // console.log(strTime);
+// }
 
 export default HomePage;
