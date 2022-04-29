@@ -1,11 +1,16 @@
-// import '../styles/error_form.css'
-import React from 'react'
+import '../styles/error-form.css'
 
 const ErrorForm = (props) => {
     return(
-        <div>
-            Error! Invalid URL
-        </div>
+        <>
+            <div
+                className='error-message'
+            >Error! Invalid URL</div>    
+
+            <button
+                className='animation-button'
+            >Animations Menu</button>
+        </>
     )
 }
 export default ErrorForm;

@@ -44,7 +44,7 @@ body {
 
 .profile-username {
     position: absolute;
-    top: 55px;
+    top: 120px;
     left: 160px;
     color: white;
 }
@@ -58,7 +58,7 @@ body {
 
 .menu-time {
     position: absolute;
-    top: 5px;
+    top: 2px;display: flex;
     left: 25px;
     color: white;
 }
@@ -120,6 +120,78 @@ body {
     background: #21D0B2;
     position: absolute;
     top: 360px;
+}
+
+.social-info > h2 {
+    text-align: center;
+    color: white;
+    padding-top: 5px;
+}
+
+#friend1 {
+    position: absolute;
+    border-radius: 20px;
+    background: white;
+    width: 315px;
+    height: 100px;
+    top: 50px;
+    left: 30px;  
+}
+
+#friend1-icon {
+    position: absolute;
+    border-radius: 20px;
+    background: rgb(34, 129, 192);
+    width: 60px;
+    height: 60px;
+    top: 20px;
+    left: 20px;
+}
+
+#friend1-name {
+    position: absolute;
+    left: 100px;
+    top: 25px;
+}
+
+#friend1-username {
+    position: absolute;
+    left: 100px;
+    top: 50px;
+    font-size: 15px;
+}
+
+#friend2 {
+    position: absolute;
+    border-radius: 20px;
+    background: white;
+    width: 315px;
+    height: 100px;
+    top: 160px;
+    left: 30px;  
+}
+
+#friend2-icon {
+    position: absolute;
+    border-radius: 20px;
+    background: rgb(34, 129, 192);
+    width: 60px;
+    height: 60px;
+    top: 20px;
+    left: 20px;
+}
+
+#friend2-name {
+    position: absolute;
+    left: 100px;
+    top: 25px;
+}
+
+#friend2-username {
+    position: absolute;
+    left: 100px;
+    top: 50px;
+    font-size: 15px;
 }
 
 .menu-bar {
@@ -189,6 +261,42 @@ td {
     border: 2px solid black;
 }
 
+#chatlog1 {
+    position: absolute;
+    left: 20px;
+    bottom: 0px;
+}
+#chatlog2 {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+}
+#chatlog3 {
+    position: absolute;
+    left: 20px;
+    bottom: 40px;
+}
+#chatlog4 {
+    position: absolute;
+    left: 20px;
+    bottom: 60px;
+}
+#chatlog5 {
+    position: absolute;
+    left: 20px;
+    bottom: 80px;
+}
+#chatlog6 {
+    position: absolute;
+    left: 20px;
+    bottom: 100px;
+}
+#chatlog7 {
+    position: absolute;
+    left: 20px;
+    bottom: 120px;
+}
+
 .chat-box-message {
     position: absolute;
     width: 550px;
@@ -225,3 +333,10 @@ td {
 
 }
 
+.nav-bar-log-out {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}

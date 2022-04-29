@@ -8,6 +8,14 @@ body {
     font-family: 'Poppins',sans-serif;
 }
 
+.logoimg{
+    margin-left: auto;
+    display: block;
+    max-width:200%;
+    height:auto;
+    width: 800px;
+}
+
 .top-circle{
     position: absolute;
     width: 350px;
@@ -111,9 +119,11 @@ body {
     top: 400px;
     width: 300px;
     height: 60px;
-    border-radius: 15px;
     margin-top: 40px;
-    background-color: #FFF; 
+    background-color: white; 
+    
+    border-radius: 15px;
+    border-color: red;
 
     font-family: 'Nunito';
     font-style: normal;
